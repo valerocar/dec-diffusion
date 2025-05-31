@@ -1,0 +1,180 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 12.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      5803,        172]
+NotebookOptionsPosition[      4940,        149]
+NotebookOutlinePosition[      5309,        165]
+CellTagsIndexPosition[      5266,        162]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"d", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"d1", ",", "0", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"d2", ",", "1", ",", "0"}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"d3", ",", "0", ",", "1"}], "}"}]}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"MatrixForm", "[", "d", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"g", "=", 
+   RowBox[{"Simplify", "[", 
+    RowBox[{
+     RowBox[{"Transpose", "[", "d", "]"}], ".", "d"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"MatrixForm", "[", "g", "]"}], "\[IndentingNewLine]", 
+ RowBox[{"Simplify", "[", 
+  RowBox[{
+   RowBox[{"Inverse", "[", "g", "]"}], ".", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "0", ",", "0"}], "}"}]}], "]"}]}], "Input",
+ CellChangeTimes->{{3.788615698904538*^9, 3.788615830230647*^9}, {
+  3.788616003913638*^9, 3.7886161019316473`*^9}, {3.788633541146646*^9, 
+  3.788633579542354*^9}, {3.788633716456964*^9, 3.7886337168454313`*^9}},
+ CellLabel->"In[22]:=",ExpressionUUID->"1c0b3eb1-26c0-4e29-8498-7bf97eaab67a"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {"d1", "0", "0"},
+     {"d2", "1", "0"},
+     {"d3", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.788615732969548*^9, 3.788615830695146*^9}, 
+   3.788615904729163*^9, {3.788616005061344*^9, 3.788616035787629*^9}, {
+   3.788616097228448*^9, 3.788616103263403*^9}, {3.788633544359418*^9, 
+   3.788633580023885*^9}, 3.7886337172049313`*^9},
+ CellLabel->
+  "Out[23]//MatrixForm=",ExpressionUUID->"125be22c-c3b7-466a-8042-\
+d8384b36cee5"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"(", "\[NoBreak]", GridBox[{
+     {
+      RowBox[{
+       SuperscriptBox["d1", "2"], "+", 
+       SuperscriptBox["d2", "2"], "+", 
+       SuperscriptBox["d3", "2"]}], "d2", "d3"},
+     {"d2", "1", "0"},
+     {"d3", "0", "1"}
+    },
+    GridBoxAlignment->{"Columns" -> {{Center}}, "Rows" -> {{Baseline}}},
+    GridBoxSpacings->{"Columns" -> {
+        Offset[0.27999999999999997`], {
+         Offset[0.7]}, 
+        Offset[0.27999999999999997`]}, "Rows" -> {
+        Offset[0.2], {
+         Offset[0.4]}, 
+        Offset[0.2]}}], "\[NoBreak]", ")"}],
+  Function[BoxForm`e$, 
+   MatrixForm[BoxForm`e$]]]], "Output",
+ CellChangeTimes->{{3.788615732969548*^9, 3.788615830695146*^9}, 
+   3.788615904729163*^9, {3.788616005061344*^9, 3.788616035787629*^9}, {
+   3.788616097228448*^9, 3.788616103263403*^9}, {3.788633544359418*^9, 
+   3.788633580023885*^9}, 3.7886337172061872`*^9},
+ CellLabel->
+  "Out[25]//MatrixForm=",ExpressionUUID->"be17f38e-c365-48cf-8a36-\
+b5f9a7be05b3"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["1", 
+    SuperscriptBox["d1", "2"]], ",", 
+   RowBox[{"-", 
+    FractionBox["d2", 
+     SuperscriptBox["d1", "2"]]}], ",", 
+   RowBox[{"-", 
+    FractionBox["d3", 
+     SuperscriptBox["d1", "2"]]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.788615732969548*^9, 3.788615830695146*^9}, 
+   3.788615904729163*^9, {3.788616005061344*^9, 3.788616035787629*^9}, {
+   3.788616097228448*^9, 3.788616103263403*^9}, {3.788633544359418*^9, 
+   3.788633580023885*^9}, 3.788633717207508*^9},
+ CellLabel->"Out[26]=",ExpressionUUID->"31116cb7-5196-48e7-8d3a-6f4d19504a2c"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Inverse", "[", "g", "]"}], ".", 
+  RowBox[{"{", 
+   RowBox[{"1", ",", "0", ",", "0"}], "}"}]}]], "Input",
+ CellChangeTimes->{{3.7886343794669237`*^9, 3.788634407031055*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"54c460df-3523-407b-b0ac-69f87350a896"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox["1", 
+    SuperscriptBox["d1", "2"]], ",", 
+   RowBox[{"-", 
+    FractionBox["d2", 
+     SuperscriptBox["d1", "2"]]}], ",", 
+   RowBox[{"-", 
+    FractionBox["d3", 
+     SuperscriptBox["d1", "2"]]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.7886343828050947`*^9, 3.7886344075067797`*^9}},
+ CellLabel->"Out[32]=",ExpressionUUID->"19bd3697-c82e-4988-b086-92ccc1998f20"]
+}, Open  ]]
+},
+WindowSize->{1408, 1279},
+WindowMargins->{{Automatic, -1523}, {Automatic, 31}},
+Magnification:>1.5 Inherited,
+FrontEndVersion->"12.0 for Linux x86 (64-bit) (April 8, 2019)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1094, 28, 184, "Input",ExpressionUUID->"1c0b3eb1-26c0-4e29-8498-7bf97eaab67a"],
+Cell[1677, 52, 875, 23, 130, "Output",ExpressionUUID->"125be22c-c3b7-466a-8042-d8384b36cee5"],
+Cell[2555, 77, 1003, 27, 134, "Output",ExpressionUUID->"be17f38e-c365-48cf-8a36-b5f9a7be05b3"],
+Cell[3561, 106, 613, 15, 78, "Output",ExpressionUUID->"31116cb7-5196-48e7-8d3a-6f4d19504a2c"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4211, 126, 287, 6, 47, "Input",ExpressionUUID->"54c460df-3523-407b-b0ac-69f87350a896"],
+Cell[4501, 134, 423, 12, 111, "Output",ExpressionUUID->"19bd3697-c82e-4988-b086-92ccc1998f20"]
+}, Open  ]]
+}
+]
+*)
+
